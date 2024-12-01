@@ -72,10 +72,10 @@ void oledkit_render_info_user(void) {
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     if (IS_LAYER_ON(1)) {  // When Layer 1 is active
-        return TAPPING_TERM - 80;
+        return 40;
     }
     if (IS_LAYER_ON(2)) {  // When Layer 2 is active
-        return TAPPING_TERM - 80;
+        return 40;
     }
     switch (keycode) {
         default:
